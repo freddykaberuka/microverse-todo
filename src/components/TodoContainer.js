@@ -1,5 +1,6 @@
 import React from "react"
 import Header from "./Header"
+import InputTodo from "./InputTodo";
 class TodoContainer extends React.Component {
 
 state = {
@@ -26,6 +27,7 @@ state = {
     return (
       <div>
         <Header />
+        <InputTodo/>
       <ul>
       {this.state.todos.map(todo => (
         <li>{todo.title}</li>
